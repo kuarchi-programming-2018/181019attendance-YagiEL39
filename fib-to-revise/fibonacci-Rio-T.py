@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 Spyderエディタ
 
@@ -6,12 +6,15 @@ Spyderエディタ
 """
 def fib(n):
 #フィボナッチ数列を定義する。
-    a, b = 0, 1
-    for i in range(n):
-        a, b = b, a + b
-    return b
+	a, b = 0, 1
+	if n==0:
+		return a
+	else:
+		for i in range(n):
+        		a, b = b, a + b
+		return b
 
-print([fib(i) for i in range(10)]) 
+print([fib(i) for i in range(1,11)]) 
 #n=1,2,3...,10の時のフィボナッチ数列
 # [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
 print(fib(2018)) 

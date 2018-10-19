@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+﻿# -*- coding: utf-8 -*-
 """
 Spyderエディタ
 
@@ -57,15 +57,11 @@ Spyderエディタ
 def fib(n):
     if n == 0:
         return 0
-    elif n == 1:
-        return 1
     else:
         (a, b) = (0, 1)
-        for i in range(n - 1):
+        for i in range(n):
             (a, b) = (b, a + b)
         return b
-    
-
 print(fib(2018))
 #答えは In [31]の出力値
 
